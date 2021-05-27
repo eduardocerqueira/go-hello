@@ -7,10 +7,29 @@ pre-requisites:
 * [Vcode-go extension](https://github.com/golang/vscode-go)
 
 ```
+# first time, installing and running
 go version
 go install .
 export PATH=$PATH:$(dirname $(go list -f '{{.Target}}' .))
 hello
+
+# after changing any code
+go build
+go install .
+hello
+```
+
+running tests
+```
+cd morestrings
+go test
+```
+
+if needed, helpful commands:
+
+```
+go get github.com/google/go-cmp/cmp
+go clean -modcache
 ```
 
 ## links
