@@ -1,6 +1,6 @@
 # Go basic
 
-play with Go and VCode
+playing with Go and VCode ...
 
 pre-requisites:
 * [Go installed](https://golang.org/dl/)
@@ -36,4 +36,6 @@ go clean -modcache
 * https://golang.org/doc/code
 * https://github.com/golang/vscode-go
 * https://code.visualstudio.com/docs/languages/go
+* https://golang.org/doc/tutorial/create-module
+* https://gobyexample.com
 * https://www.digitalocean.com/community/tutorials/debugging-go-code-with-visual-studio-code
