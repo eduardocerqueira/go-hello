@@ -2,11 +2,13 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"math"
 	"math/rand"
 	"time"
 
 	"example.com/user/hello/morestrings"
+	"example.com/user/hello/utils"
 	"github.com/google/go-cmp/cmp"
 )
 
@@ -73,4 +75,10 @@ func main() {
 
 	// constant
 	fmt.Println(Pi)
+
+	err := utils.WriteToFile("test.txt", "testing writing to a file!!!\n")
+	if err != nil {
+		log.Fatal(err)
+	}
+
 }
